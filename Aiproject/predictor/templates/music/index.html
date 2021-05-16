@@ -1,0 +1,86 @@
+{% extends 'music/base.html' %}
+{% load static %}
+
+	<!-- Favicon  -->
+ <link rel="icon" href="{% static 'music/images/headphone.png' %}">
+</head>
+<body data-spy="scroll" data-target=".fixed-top">
+
+    <!-- Preloader -->
+	<div class="spinner-wrapper">
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+    </div>
+    <!-- end of preloader -->
+
+
+
+{% block content %}
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="header-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <div class="text-container" style="margin-top: -4rem;">
+                            <h4>A music genre classification for 
+                                <ul>
+                                    <li>Metal</li>
+                                    <li>Disco</li>
+                                    <li>Classical</li>
+                                    <li>Hiphop</li>
+                                    <li>Jazz</li>
+                                    <li>Country</li>
+                                    <li>Pop</li>
+                                    <li>Blues</li>
+                                    <li>Reggae</li>
+                                    <li>Rock</li>
+                                </ul>
+                            </h4>
+                            <a class="btn-solid-lg page-scroll mt-4" href="#basic-2"><i class="fas fa-headphones"></i> GET STARTED</a>
+                        </div>				
+
+					<div class="col-lg-5">
+
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
+        </div> <!-- end of header-content -->
+    </header> <!-- end of header -->
+    <!-- end of header -->
+
+
+
+    <!-- File Upload -->
+    {% include 'music/check_genre.html' %}
+
+
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of form -->
+    <!-- end of contact -->
+    <style>
+        .fab{
+            font-size: 2rem;
+            margin: 2rem 2rem 1rem;
+        }
+    </style>
+        <!-- Statistics -->
+    <!-- Footer -->
+    <section id="footer" class="text-center" style="width: 100%;height: 9rem;background-color: rgb(9, 19, 34);">
+        <h4 style="font-size: 1.5rem;padding-top: 1rem">Social Media</h4>
+        <a href="https://facebook.com"><i class="fab fa-facebook"></i></a>
+        <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+        <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>   
+    </section> <!-- end of footer -->
+    <!-- end of footer -->
+{% endblock %}
+
+</body>
+
+</html>
